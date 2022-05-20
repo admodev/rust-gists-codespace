@@ -6,6 +6,15 @@
         <title>Hello</title>
     </head>
     <body>
-        <h1>Hello, There!</h1>
+        <h2>Hello, There! <br /> Here, you can create your own gist.</h2>
+        
+        <div>
+          <form onSubmit="createGistFromView(event);">
+            <input type="text" placeholder="Write here..." id="gistText">
+            <button type="submit">Create Gist</button>
+          </form>
+        </div>
+
+        <script type="text/javascript" src="./js/createGist.js"></script>
     </body>
 </html>
