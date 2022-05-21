@@ -4,15 +4,17 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width" />
         <title>Hello</title>
+        <link rel="stylesheet" href="./css/hello.css" type="text/css" media="screen" title="no title" charset="utf-8">
     </head>
     <body>
         <h2>Hello, There! <br /> Here, you can create your own gist.</h2>
-        
+
         <div>
-          <form onSubmit="createGistFromView(event);">
-            <input type="text" placeholder="Write here..." id="gistText">
-            <button type="submit">Create Gist</button>
-          </form>
+            <form onSubmit="createGistFromView(event);">
+                <textarea placeholder="Write here..." id="gistText"></textarea>
+                <button type="submit">Create Gist</button>
+            </form>
+            <div id="written"></div>
         </div>
 
         <script type="text/javascript" src="./js/createGist.js"></script>
